@@ -14,6 +14,5 @@ class RentalService {
     fun startRental(userId: String, reservationId: Long): Rental {
         Log.infof("Starting rental for %s with reservation id: %s", userId, reservationId)
         return Rental(id.incrementAndGet(), userId, reservationId, LocalDate.now())
-
     }
 }
